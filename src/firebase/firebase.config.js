@@ -1,12 +1,16 @@
-
+// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBsJRzSOZGEuPBhu9zPyO0rkzsezykMqsM",
-  authDomain: "react-dragon-auth-route.firebaseapp.com",
-  projectId: "react-dragon-auth-route",
-  storageBucket: "react-dragon-auth-route.appspot.com",
-  messagingSenderId: "519155649881",
-  appId: "1:519155649881:web:a80c9ed64eee5996355048"
+  apiKey: import.meta.env.VITE_APIKEY,
+  authDomain: import.meta.env.VITE_AUTHDOMAIN,
+  projectId: import.meta.env.VITE_PROJECTID,
+  storageBucket: import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId:import.meta.env.VITE_MESSAGINGSENDERID,
+  appId:import.meta.env.VITE_APPID,
 };
 
 // Initialize Firebase
